@@ -1,0 +1,42 @@
+.text-opacity {
+    display: none;
+}
+
+.input:checked + .text-opacity {
+    display: block;
+}
+
+.input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 70px;
+    border: 1px solid darkolivegreen;
+    border-radius: 5px;
+}
+
+.button-check {
+    display: none;
+}
+
+.input:checked ~ .button .button-check {
+    display: flex;
+}
+
+.input:checked ~ .button .button-uncheck {
+    display: none;
+}
